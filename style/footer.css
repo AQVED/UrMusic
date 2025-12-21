@@ -1,0 +1,36 @@
+.footer-flex{
+    background-color: #101010;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px 75px;
+}
+
+.footer-info a{
+    color: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.footer-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-info{
+    margin: 15px;
+}
+
+footer h2 {
+    margin: 0;
+    align-self: center;
+    font-weight: normal;
+    font-size: 14px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align:center;
+    padding: 10px 20px;
+}
