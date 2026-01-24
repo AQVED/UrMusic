@@ -20,18 +20,37 @@
             </div>
             <h1>UrMusic</h1>
         </div>
-        
-            <div class="nav-btn"><img src="src/home.svg" alt="" width="30px" height="30px"><span>Головна</span></div>
-            <div class="nav-btn"><img src="src/favorites.svg" alt=""  width="30px" height="30px"><span>Збережені</span></div>
+            <div class="nav-btn"><a href="./index.html"><img src="src/home.svg" alt="" width="30px" height="30px"><span>Головна</span></div></a>
+            <div class="nav-btn"><a href="./library.html"><img src="src/favorites.svg" alt=""  width="30px" height="30px"><span>Збережені</span></div></a>
         </nav>
         <div class="search-bar">
-            <input type="search" placeholder="Пошук">
+            <form action="">
+                <input type="text" placeholder="Пошук">
+                <button class="search">Пошук</button>
+            </form>
+            
         </div>
     </header>
     <main>
-        <iframe width="300px" height="170" scrolling="no" frameborder="no" allow="autoplay"
-  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293">
-</iframe>
+        <div class="container">
+			<div class="row">
+				<h1>Нова музика</h1>
+
+
+			</div>
+
+			<ul id="playlist">
+
+			</ul>
+
+			<audio id="audioPlayer" controls volume="50%">
+				<source id="audioSource" src="audio/song1.mp3" type="audio/mp3">
+				Ваш браузер не підтримує програвач аудіо.
+			</audio>
+		</div>
+
+    </main>
+
 
     <footer>
         <div class="footer-flex">
@@ -78,6 +97,6 @@
         <h2>&copy; Всі права захищені</h2>
     </footer>
 
-    
+    	<script src="./script.js"></script>
 </body>
 </html>

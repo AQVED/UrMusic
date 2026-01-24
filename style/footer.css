@@ -6,6 +6,13 @@
     align-items: start;
     justify-content: space-between;
     padding: 20px 75px;
+    position: sticky;
+    bottom: 0;
+    
+}
+
+.root{
+    min-height: 100%;
 }
 
 .footer-info a{
@@ -23,6 +30,9 @@
     margin: 15px;
 }
 
+main{
+    min-height: 100vh;
+}
 footer h2 {
     margin: 0;
     align-self: center;
@@ -33,4 +43,5 @@ footer h2 {
     color: white;
     text-align:center;
     padding: 10px 20px;
+    
 }

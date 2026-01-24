@@ -8,6 +8,33 @@ header{
     padding: 25px 75px;
 }
 
+@media (max-width:1000px) {
+    header,nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: max-content;
+        
+    }
+    header{
+        width: 100vw;
+        min-width: 400px;
+    }
+    #playlist li,#library-list li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 50px;
+    background-color: #CC1919B6;
+    padding: 5px 15px;
+    border-radius: 20px;
+    min-width: 300px;
+}
+    
+}
+
 nav{
     display: flex;
     gap: 20px;
@@ -21,7 +48,7 @@ nav{
     gap: 10px;
 }
 
-.nav-btn{
+.nav-btn, .nav-btn a{
     background-color: black;
     color: white;
     border: none;
